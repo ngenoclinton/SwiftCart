@@ -1,0 +1,20 @@
+.product-container{
+    background-color: #fff;
+    position:relative;
+}
+
+.product-container img{
+    width: 310px;
+    height: 280px;
+    object-fit:cover;
+    margin-top: 25px;
+}
+
+.product-container .add-btn{
+    padding: 10px;
+    outline: none;
+    background-color: var(--orange);
+    border: none;
+    opacity: 0;
+    width:100% !important;
+}

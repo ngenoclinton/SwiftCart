@@ -1,0 +1,16 @@
+.star-ratings {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star-ratings > svg {
+    fill: #e4e4e4;
+    transition: fill 0.2s ease-in-out;
+  }
+  
+  .star-ratings > svg:hover,
+  .star-ratings > svg:hover ~ svg,
+  .star-ratings > svg.filled {
+    fill: #FFC107;
+    color:#FFC107;
+  }

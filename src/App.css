@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: rgb(255, 193, 7, 0.6);
+  --green: #28a745;
+  --success: #28a745;
+  --teal: #20c997;
+  --primary-color: #008134FF;
+  --light-primary-color: #008134FF;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins','Roboto', sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  line-height: 2;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: Verdana,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  color: #333;
+  font-size: 14px;
+   z-index: 0;
+   transition: transform 0.3s ease-in-out;
+ }
+a {
+  color: #333;
+  text-decoration: none;
 }
-
-.App-link {
-  color: #61dafb;
+.icons{
+  color: var(--green);
+  font-size: 20px;    
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 768px){
+  
+}
+@media screen and (max-width: 576px){
+  
+}
+@media screen and (max-width: 320px){
+  
 }

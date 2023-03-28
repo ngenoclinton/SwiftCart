@@ -1,0 +1,16 @@
+.banner-container{
+    padding-top: 170px;
+    z-index: 200;
+}
+@media screen and (max-width: 1000px){
+  .banner-main{
+        margin: 0;
+        padding: 0;
+    }
+  }
+  @media screen and (max-width: 768px){
+   
+  }
+  @media screen and (max-width: 375px){
+        
+  }

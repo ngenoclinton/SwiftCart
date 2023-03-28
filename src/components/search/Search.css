@@ -1,0 +1,106 @@
+.search-container{
+    position: relative;
+}
+/* dropdown */
+.search-section{
+    display: flex;
+    justify-content: space-evenly;
+    padding:2px 130px;
+    align-items: center;
+    background-color: rgb(1, 146, 59);
+    width: 100vw;
+}
+.dropdown-container{
+    flex: 1;
+    background: rgba(0, 128, 64, 0.8);
+    margin-right: 10px;
+    max-width: 20%;
+}
+.dropdown-container button{
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    position: relative;
+    background:rgba(0, 128, 64, 0.8);;
+    color: #fff;
+}
+.dropdown{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: rgba(0, 128, 64, 0.8);
+        width: 250px;
+        padding: 8px;
+        margin-top: 5px;
+        margin-left: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        z-index: 10;
+    }
+.dropdown a{
+        color: var(--white);
+        font-size: 18px!important;
+        padding: 10px;
+    }
+.dropdown-cat-icons{
+  font-size: 17px;
+  color: #b0b1b3;
+    color: #fff;
+    padding-top: 4px;
+}
+/* search  */
+.search-container {
+    flex: 3;
+    display: flex;
+    align-items: center;   
+    position: relative; 
+    cursor: pointer;
+    width: 100%;
+}  
+.search-container>input{
+    background-color: transparent;
+    font-size: 14px;
+    padding: 8px;
+    width: 500px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    border: 1px solid var(--teal);
+    outline: none;
+    flex: 2;
+}
+.search-container .fa-search{
+    position:absolute;
+    right: 25px;
+    z-index: 99;
+}
+@media screen and (max-width: 768px){
+    .search-section{
+        padding:0;
+    }
+    .dropdown-container{
+        display: none;
+    }
+    .search-container {
+        margin: 2px 5px;
+        width: 95%;
+    }
+    .search-container>input{
+        border-radius: 50px;
+    }
+}
+@media screen and (max-width: 375px){
+    .search-section{
+        padding:0;
+    }
+    .dropdown-container{
+        display: none;
+    }
+    .search-container {
+        margin: 2px 5px;
+        width: 95%;
+    }
+    .search-container>input{
+        border-radius: 50px;
+    }
+}

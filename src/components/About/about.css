@@ -1,0 +1,238 @@
+
+.about-py-5{
+    display: flex;
+    background: linear-gradient(to right, #377437 0%,rgba(40, 109, 57, 0.841) 50%, rgb(75, 177, 101) 100%);
+    padding: 30rem 30rem 30rem 15rem;
+    height:63rem;
+    gap: 10px;
+}
+.about-header{
+  color: #fff;
+  flex: 2;
+}
+.about-header h1{
+    font-size: 4rem;
+  }
+  .about-header p{
+    color: #fff;
+    font-size: 1.7rem;
+    padding-right: 20px;
+    width: 80%;
+  }
+  .about-image>img{
+    transform: scale(15);
+    flex:1;
+    object-fit: cover;
+    border-radius: 20px;
+    padding-top: 1.5rem;
+  }
+  /* serivices */
+  .services-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     margin-top: 50px;
+     height:50rem;
+    }
+  .services-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ .services-header>h1{
+  color: #377437;
+ }
+ .services-header>p{
+  padding:0 400px;
+  text-align: center;
+ }
+  .services{
+    display: flex;
+    gap: 20px;
+  }  
+  .services p{
+    font-size: 1.8rem;
+  }
+  .serv-Item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+    box-shadow: 0px 1px 2px rgb(95, 194, 95);
+    padding: 50px;
+  }
+  .services .as-i{
+    color: var(--success);
+    transform: scale(2.5);
+  }
+  /* Media queries */
+  @media screen and (max-width: 1024px){ 
+    .about-py-5{
+      padding: 25rem 25rem 25rem 10rem;
+      display: flex;
+      /* height: fit-content; */
+    }
+    .about-header h1{
+      font-size: 28px; 
+    }
+    .about-header p{
+      width: 100%;
+      font-size: 16px; 
+      padding: 0;
+      flex: 5;
+    }
+    .about-image>img{
+      transform: scale(.55);
+      border-radius: 20px;
+      padding: 0;  
+    }
+  }
+  @media screen and (max-width: 1024px){    
+    .about-py-5{
+      padding: 21rem 5rem 3rem 5rem;
+      height: fit-content;
+    }
+    .about-header h1{
+      font-size: 30px; 
+      margin-top: 10px;
+    }
+    .about-header p{
+      width: 100%;
+      font-size: 16px; 
+      padding: 0;
+      flex: 5;
+    }
+    .about-image>img{
+      transform: scale(.65);
+      border-radius: 20px;
+      padding: 0;  
+    }
+    /* services */
+    .services-container{
+      margin-top: 50px;
+      height:fit-content;
+      padding: 0rem 10rem;
+    }
+    .services-header>p{
+      padding: 0rem 10rem;
+      text-align: center;
+     }
+     .services{
+     /* display: grid; */
+     grid-template-columns: repeat(2,1fr);      
+    }  
+    .services p{
+      font-size: 1.8rem;
+    }
+    .serv-Item{
+      margin-top: 20px;
+      gap:20px;
+    }
+    
+  }
+  @media screen and (max-width: 768px){    
+    .about-py-5{
+      padding: 21rem 0rem 3rem 3rem;
+      height: fit-content;
+    }
+    .about-header h1{
+      font-size: 28px; 
+      padding-left:50px;
+    }
+    .about-header p{
+      width: 100%;
+      font-size: 16px; 
+      padding-top: 20px;
+      flex: 5;
+    }
+    .about-image>img{
+      transform: scale(.55);
+      border-radius: 20px;
+      padding: 0;  
+      margin: 0;
+    }
+    /* services */
+    .services-container{
+      margin-top: 50px;
+      height:fit-content;
+      padding: 0rem 10rem;
+    }
+    .services-header>p{
+      padding:0 1rem;
+      text-align: center;
+     }
+     .services{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);      
+    }  
+    .services p{
+      font-size: 1.8rem;
+    }
+    .serv-Item{
+      margin-top: 20px;
+      gap:20px;
+    }
+    
+  }
+  @media screen and (max-width: 576px){
+    .about-py-5{
+      padding: 18rem 1rem 0rem 1rem;
+      height: fit-content;
+      flex-direction: column;
+    }
+    .about-header h1{
+      text-align: center; 
+      font-size: 20px; 
+    }
+    .about-header p{
+      width: 100%;
+      text-align: center;  
+       font-size: 16px; 
+       padding: 0;
+    }
+    .about-image>img{
+      transform: scale(.9);
+      border-radius: 20px;
+    }
+    /* services */
+    .services-container{
+      margin-top: 50px;
+      height:fit-content;
+      padding: 0 5rem;
+    }
+    .services-header>p{
+      padding:0 1rem;
+      text-align: center;
+     }
+     .services{
+      flex-direction: column;
+      /* gap: 20px; */      
+    }  
+    .services p{
+      font-size: 1.8rem;
+    }
+    .serv-Item{
+      margin-top: 20px;
+      gap:20px;
+    }
+    
+  }
+  @media screen and (max-width: 375px){
+    .about-header h1{
+      font-size: 25px; 
+      padding: 0;;
+    }
+    .services{
+      display: flex !important;;
+      flex-direction: column;
+     }  
+  }
+  @media screen and (max-width: 320px){
+    .about-header h1{
+      font-size: 20px!important; 
+      padding: 0;
+      margin: 0;
+    }
+  }

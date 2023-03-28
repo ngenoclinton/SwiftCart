@@ -1,0 +1,48 @@
+.reviews-container{   
+padding: 40px 190px;
+display: flex;
+flex-direction: column;
+margin-top: 120px; 
+}
+.rev-header{
+  display: flex;
+  justify-content:space-between;  
+}
+.faPlus{
+    transform: scale(0.5);
+    height: 100%;
+    cursor: pointer;
+}
+.review-container{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+}
+.rev-one{
+  grid-column: 1/2;
+  max-width: 500px;
+  margin-right: 100px;
+ }
+ .rev-two{
+ grid-column: 2/5;
+ max-width: 90%;
+}
+.Reviews{
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 1440px){
+  .reviews-container{   
+    padding-top: 50px;
+    margin-top: 20px; 
+    }
+}
+@media screen and (max-width: 768px){
+  .reviews-container{   
+    padding: 0 80px;
+    margin-top: 20px; 
+    }
+}
+@media screen and (max-width: 576px){
+  .reviews-container{   
+    padding: 0 60px;
+    }
+}

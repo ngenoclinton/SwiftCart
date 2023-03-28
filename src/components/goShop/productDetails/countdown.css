@@ -1,0 +1,95 @@
+.countdown-container{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.timer{
+    position: relative;
+}
+.timer .top-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px!important;
+    padding-top: 10px;
+}
+.visitors-container {
+    align-items: center;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 16px;
+  }
+.visitors {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 2px;
+    justify-content:center;
+    align-items:flex-start;
+    background-color: var(--success);
+    color: #fff;
+    display: inline-flex;
+    margin: 0 2px;
+  }
+ .clock{
+    display: flex;
+}
+.clock section p{
+    font-size: 22px;
+    font-weight: 600;
+}
+.clock section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.countdown-timer__progress-bar--foreground {
+    height: 10px;
+    border-radius: 10px;
+    transition: background-color 1s ease-in-out;
+    position: 'absolute';
+    z-index: '179';
+    top:10px;
+  }  
+  .countdown-timer__progress-bar--background {
+    height: 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    position: absolute;
+    z-index: 189;
+  }
+
+  /* Media queries */
+  @media screen and (max-width: 768px){
+    .timer .top-sec{      
+      font-size: 14px!important;
+      padding-top: 10px;      
+  }
+  .visitors-container {
+    align-items: center;
+    height: 30px;
+    padding: 0;
+    font-size: 15px;
+  }
+.visitors {
+    width:30px;
+  }
+  }
+  @media screen and (max-width: 576px){
+    
+  }
+  @media screen and (max-width: 320px){
+    .visitors-container {
+      height: 30px;
+      padding: 0;
+      font-size: 12px;
+    }
+    .visitors {
+      width:25px;
+    }
+  }
