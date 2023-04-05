@@ -23,14 +23,14 @@ function GoShop(props){
         <div className="goshop-container">
             <div className="sections">            
             <div className="right"><span>
-                <div className="sort-group">
+                {/* <div className="sort-group">
                     <div>
                         <span>Sorted By :</span>
                         <span>price </span>
                         <span>Newest</span>
                         <span>A-Z</span>
                     </div>
-                </div>                    
+                </div>                     */}
                 <div className="shop-products">  
                  {dataSearch.map((product)=>{
                    return (
